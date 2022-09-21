@@ -702,10 +702,29 @@ export default function Swap({ history }: RouteComponentProps) {
                     <Trans>Unwrap</Trans>
                   ) : null}
                 </ButtonPrimary>
-              ) : routeNotFound && userHasSpecifiedInputOutput && !routeIsLoading && !routeIsSyncing ? (
+              ) : routeNotFound ? (
+                <GreyCard style={{ textAlign: 'center' }}>
+                  <ThemedText.Main mb="4px">
+                    <Trans>Route not found.</Trans>
+                  </ThemedText.Main>
+                </GreyCard>
+              ) : userHasSpecifiedInputOutput ? (
+                <GreyCard style={{ textAlign: 'center' }}>
+                  <ThemedText.Main mb="4px">
+                    <Trans>User has specified Input/Output.</Trans>
+                  </ThemedText.Main>
+                </GreyCard>
+              ) : !routeIsLoading ? (
+                <GreyCard style={{ textAlign: 'center' }}>
+                  <ThemedText.Main mb="4px">
+                    <Trans>Route is not loading.</Trans>
+                  </ThemedText.Main>
+                </GreyCard>
+              ) : !routeIsSyncing ? (
                 <GreyCard style={{ textAlign: 'center' }}>
                   <ThemedText.Main mb="4px">
                     <Trans>Insufficient liquidity for this trade.</Trans>
+                    <Trans>Route is not Syncing.</Trans>
                   </ThemedText.Main>
                 </GreyCard>
               ) : showApproveFlow ? (
@@ -788,7 +807,10 @@ export default function Swap({ history }: RouteComponentProps) {
                         {priceImpactTooHigh ? (
                           <Trans>High Price Impact</Trans>
                         ) : trade && priceImpactSeverity > 2 ? (
-                          <Trans>Swap Anyway</Trans>
+                          <>
+                            <Trans>Swap Anyway</Trans>
+                            <Trans>Warn : Price Impact</Trans>
+                          </>
                         ) : (
                           <Trans>Swap</Trans>
                         )}

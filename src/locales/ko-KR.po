@@ -913,6 +913,10 @@ msgstr "메타 마스크 설치"
 msgid "Insufficient liquidity for this trade."
 msgstr "이 거래에 대한 유동성이 충분하지 않습니다."
 
+#: src/pages/Swap/index.tsx
+msgid "Router not found."
+msgstr "라우터를 찾을 수 없습니다."
+
 #: src/hooks/useWrapCallback.tsx
 #: src/hooks/useWrapCallback.tsx
 #: src/state/mint/hooks.tsx
@@ -1207,7 +1211,7 @@ msgstr "죄송합니다! 알 수없는 오류가 발생했습니다. 페이지�
 
 #: src/components/Header/NetworkSelector.tsx
 msgid "Optimism Bridge"
-msgstr "낙관의 다리"
+msgstr "Optimism 브릿지"
 
 #: src/components/DowntimeWarning/index.tsx
 msgid "Optimism is in Beta and may experience downtime. Optimism expects planned downtime to upgrade the network in the near future. During downtime, your position will not earn fees and you will be unable to remove liquidity. <0>Read more.</0>"
@@ -1260,7 +1264,7 @@ msgstr "드롭다운 메뉴 또는 지갑에서 지원되는 네트워크에 연
 
 #: src/components/Settings/index.tsx
 msgid "Please type the word \"{confirmWord}\" to enable expert mode."
-msgstr "전문가 모드를 사용하려면{confirmWord}\"이라는 단어를 입력하십시오."
+msgstr "전문가 모드를 사용하려면 \"{confirmWord}\"이라는 단어를 입력하십시오."
 
 #: src/components/Header/NetworkSelector.tsx
 msgid "Polygon Bridge"
@@ -1268,7 +1272,7 @@ msgstr "폴리곤 브리지"
 
 #: src/components/Header/NetworkSelector.tsx
 msgid "Polygonscan"
-msgstr "다각형 스캔"
+msgstr "폴리곤 스캔"
 
 #: src/components/Header/index.tsx
 #: src/components/NavigationTabs/index.tsx
@@ -1581,7 +1585,7 @@ msgstr "<0/>을 정확히 <1/>로 바꿉니다."
 #: src/pages/Swap/index.tsx
 #: src/pages/Swap/index.tsx
 msgid "Swap Anyway"
-msgstr "어쨌든 스왑"
+msgstr "스왑 강행"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Swap exactly <0/> for <1/>"
@@ -1674,7 +1678,7 @@ msgstr "시장 가격이 지정된 가격 범위를 벗어났습니다. 단일 �
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "The minimum amount you are guaranteed to receive. If the price slips any further, your transaction will revert."
-msgstr "받을 수 있는 최소 금액입니다. 가격이 더 하락하면 거래가 되돌릴 것입니다."
+msgstr "받을 수 있는 최소 금액입니다. 가격이 더 하락하면 거래가 취소 될 것입니다."
 
 #: src/components/Header/Polling.tsx
 msgid "The most recent block number on this network. Prices update on every block."
@@ -2272,7 +2276,7 @@ msgstr "내 미 청구 UNI"
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "after slippage"
-msgstr "미끄러진 후"
+msgstr "슬리피지 발생 후"
 
 #: src/components/ConnectedAccountBlocked/index.tsx
 msgid "blocked activities"
@@ -2288,7 +2292,7 @@ msgstr "{0}에 찬성"
 
 #: src/components/Header/Polling.tsx
 msgid "gwei"
-msgstr "기가웨이"
+msgstr "gwei"
 
 #: src/components/Web3Status/index.tsx
 msgid "has socks emoji"
